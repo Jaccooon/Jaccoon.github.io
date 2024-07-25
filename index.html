@@ -7,79 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-/*zoom in code*/
-
-.container .image-container
-  {
-display: flex;
-flex-wrap: wrap;
-gap:15px;
-justify-content: center;
-padding:10px;  
-  }
-
-.container .image-container .image
-  {
-height:250px;
-width:350px;
-border:5px solid #000f16;
-box-shadow: 0 5px 15px rgba(0,0,0,.1);
-overflow:hidden;
-cursor: pointer;
-  }
-
-.container .image-container .image img
-  {
-height:100%;
-width:100%;
-object-fit: cover;
-transition: .2s linear;
-  }
-
-.container .image-container .image:hover img
-  {
-transform: scale(1.1)
-  }
-
-.container .popup-image
-  {
-position: fixed;
-top:0; left:0;
-background:rgba(0,0,0,.9);
-height:100%;
-weidth:100%;
-z-index: 100;
-display:none;
-  }
-
-.container .popup-image span
-  {
-position: absolute;
-top:0; right:10px;
-font-size: 60px;
-font-weight: bolder;
-color:#fff;
-cursor:pointer;
-z-index: 100;
-  }
-
-.container .popup-image img
-  {
-position: absolute;
-top:50%; left:50%;
-transform: translate(-50%, -50%);
-border:5px solid #000f16;
-border-radius: 5px;
-width:750px;
-object-fit: cover;
-  }
-
-@media (max-width:768px)
-  .container .popup-image img
-  {
-width:95%;
-  }
-/* end of zoom code */
   
 {
   box-sizing: border-box;
@@ -259,65 +186,40 @@ footer {
 </section>
 
   <!-- the list (illustrations) --->
-<div class="container">
-  <div class="image-container">
+
     <center>
-      <div class="image"><img src="image/mech knight.png" alt="sketch of mech knight" style="width:32%"></div>
-      <div class="image"><img src="image/rig early sketch.png" alt="a rough sketch of a combat exosuit" style="width:32%"></div>
-      <div class="image"><img src="image/Chelsea.png" alt="a toned soldier, reporting for duty" style="width:32%"></div>
+      <img src="image/mech knight.png" alt="sketch of mech knight" style="width:32%">
+      <img src="image/rig early sketch.png" alt="a rough sketch of a combat exosuit" style="width:32%">
+      <img src="image/Chelsea.png" alt="a toned soldier, reporting for duty" style="width:32%">
 
-      <div class="image"><img src="image/rhino concept.jpg" alt="An armoured vehicle with a cannon and tread legs" style="width:32%"></div>
-      <div class="image"><img src="image/dwarf.png" alt="a dwarf adorned in heavy plate armour" style="width:32%"></div>
-      <div class="image"><img src="image/mechs and a battlefield.png" alt="a battlefield of mechs" style="width:32%"></div>
+      <img src="image/rhino concept.jpg" alt="An armoured vehicle with a cannon and tread legs" style="width:32%">
+      <img src="image/dwarf.png" alt="a dwarf adorned in heavy plate armour" style="width:32%">
+      <img src="image/mechs and a battlefield.png" alt="a battlefield of mechs" style="width:32%">
 
-      <div class="image"><img src="image/gourmand.png" alt="a lizard corpse, atop which sits the gourmand" style="width:32%"></div>
-      <div class="image"><img src="image/gun.gif" alt="gun firing GIF" style="width:32%"></div>
-      <div class="image"><img src="image/saw rig.png" alt="an exosuit with a sawblade carrying timber" style="width:32%"></div>
+      <img src="image/gourmand.png" alt="a lizard corpse, atop which sits the gourmand" style="width:32%">
+      <img src="image/gun.gif" alt="gun firing GIF" style="width:32%">
+      <img src="image/saw rig.png" alt="an exosuit with a sawblade carrying timber" style="width:32%">
 
-      <div class="image"><img src="image/V3 pfp.png" alt="profile pic of a red goblin" style="width:32%"></div>
-      <div class="image"><img src="image/Goop.gif" alt="goop" style="width:32%"></div>
-      <div class="image"><img src="image/sword_prac.gif" alt="a spinning blade" style="width:32%"></div>
+      <img src="image/V3 pfp.png" alt="profile pic of a red goblin" style="width:32%">
+      <img src="image/Goop.gif" alt="goop" style="width:32%">
+      <img src="image/sword_prac.gif" alt="a spinning blade" style="width:32%">
 
-      <div class="image"><img src="image/pixel goblin.png" alt="pixel art goblin with a gun" style="width:32%"></div>
-      <div class="image"><img src="image/demoscaled.png" alt="gem spritesheet" style="width:32%"></div>
-      <div class="image"><img src="image/Jaccoon v2.png" alt="a previous profile picture, also depicting a goblin" style="width:32%"></div>
+      <img src="image/pixel goblin.png" alt="pixel art goblin with a gun" style="width:32%">
+      <img src="image/demoscaled.png" alt="gem spritesheet" style="width:32%">
+      <img src="image/Jaccoon v2.png" alt="a previous profile picture, also depicting a goblin" style="width:32%">
   
-      <div class="image"><img src="image/Jaccoon v3.png" alt="a design sheet for a goblin" style="width:32%"></div>
-      <div class="image"><img src="image/centaur.png" alt="a centaur armed with an axe and shield" style="width:32%"></div>
-      <div class="image"><img src="image/sharp shooter.png" alt="a goblin cowboy, firing a ricochet shot" style="width:32%"></div>
+      <img src="image/Jaccoon v3.png" alt="a design sheet for a goblin" style="width:32%">
+      <img src="image/centaur.png" alt="a centaur armed with an axe and shield" style="width:32%">
+      <img src="image/sharp shooter.png" alt="a goblin cowboy, firing a ricochet shot" style="width:32%">
 
-      <div class="image"><img src="image/Ickxis.png" alt="an aquatic alien species with one eye" style="width:48%"></div>
-      <div class="image"><img src="image/ship.png" alt="a simple method of space transport" style="width:48%"></div>
+      <img src="image/Ickxis.png" alt="an aquatic alien species with one eye" style="width:48%">
+      <img src="image/ship.png" alt="a simple method of space transport" style="width:48%">
   
-      <div class="image"><img src="image/old ass mech.png" alt="a mech suit with a grappling hook and thrusters" style="width:48%"></div>
-      <div class="image"><img id="models"src="image/prisoner model.png" alt="a model of a low-poly Hauler from multiple angles" style="width:48%"></div>
+      <img src="image/old ass mech.png" alt="a mech suit with a grappling hook and thrusters" style="width:48%">
+      <img id="models"src="image/prisoner model.png" alt="a model of a low-poly Hauler from multiple angles" style="width:48%">
 
-      <img src="image/wrench model.png" alt="low poly wrench" style="width:64%"></div>
+      <img src="image/wrench model.png" alt="low poly wrench" style="width:64%">
     </center>
-  </div>
-
-  <script>
-
-  document.querySelectorAll('.image-container img').forEach(image =>{
-    image.onclick = () =>{
-      document.querySelector('.popup-image').style.display = 'block';
-      document.querySelector('.popup-image img').src = image.getAttribute('src');
-    }
-  });
-
-  document.querySelector('.popup-image span').onclick = () =>{
-    document.querySelector('.popup-image').style.display = 'none';
-  }
-  
-    
-  </script>
-
-<div class="popup-image">
-  <span>&times;</span>
-  <img src="image/old ass mech.png" alt="">
-</div>
-  
-</div>
 
 <footer>
   <p>:)</p>
